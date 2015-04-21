@@ -16,17 +16,17 @@ def cikis(pin,deger):
         print pin,'.inci pini aktif ettim' 
                                         
 GPIO.output(pin,GPIO.LOW)              
-print ”Sualma bitti"
+print â€Sualma bitti"
         
 while 1:                    
     s.listen(1)                        
     conn, addr = s.accept()            
-    print ‘Baglandi by', addr               
+    print â€˜Baglandi by', addr               
     while 1:                
         data = conn.recv(1024)                
         if not data: break            
         print 'Gelen veri:',data            
-        if data[0]==‘F':            
+        if data[0]==â€˜F':            
             cikis(12,data[1])                
             cikis(12,data[2])                   
 
