@@ -12,7 +12,8 @@ s.bind((HOST, PORT))
 
 def cikis(pin,deger):   
     for pin in range(0,data[1])                             
-                GPIO.output(pin,GPIO.HIGH)              
+                GPIO.output(pin,GPIO.HIGH) 
+                time.sleep(1)             
         print pin,'.inci pini aktif ettim' 
                                         
 GPIO.output(pin,GPIO.LOW)              
